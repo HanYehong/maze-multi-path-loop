@@ -3,7 +3,7 @@ public class LabyrinthLOOP {
 	protected Datas start,end;
 	protected LinkedStack<Datas> stack;
 	
-	public Labyrinth(Datas labyrinth[][],Datas start,Datas end)
+	public LabyrinthLOOP (Datas labyrinth[][],Datas start,Datas end)
 	{
 		this.labyrinth=labyrinth;
 		this.start=new Datas(start.isWhite,start.x,start.y);
@@ -223,7 +223,7 @@ public class LabyrinthLOOP {
 			{
 				data[i][j]=new Datas(bool[i][j],i,j);
 			}
-		Labyrinth laby=new Labyrinth(data,data[4][11],data[1][0]);
+		LabyrinthLOOP laby=new LabyrinthLOOP (data,data[4][11],data[1][0]);
 		laby.Find();
 	}
 }
